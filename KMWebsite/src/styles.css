@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+/* Home Component CSS */
+.home {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-top: 20px; /* Verschiebt den Header nach unten */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 2px solid #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung von Logo und Text */
+    gap: 15px; /* Abstand zwischen Logo und Text */
+}
+
+.logo img {
+    width: 70px; /* Logo-Größe */
+    height: auto; /* Proportionale Skalierung */
+    margin-top: -25px; /* Feine Anpassung, um das Logo leicht höher zu setzen */
+}
+
+.logo div {
+    display: flex;
+    flex-direction: column; /* Text untereinander */
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0; /* Kein zusätzlicher Abstand */
+}
+
+.logo span {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px; /* Abstand zwischen Titel und Untertitel */
+}
+
+nav {
+    display: flex;
+    gap: 40px; /* Abstand zwischen den Links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: lowerrcase;
+    font-family: 'Courier New', monospace;
+}
+
+
+nav a:hover {
+    text-decoration: underline; /* Unterstreichen beim Hover */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Sorgt dafür, dass das Zitat unten bleibt */
+    padding: 20px;
+    text-align: center;
+}
+
+.quote h2 {
+    font-size: 16px;
+    font-style: italic;
+    color: #444;
+    margin: 0;
+}
+
+.quote p {
+    margin: 5px 0 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
+}
