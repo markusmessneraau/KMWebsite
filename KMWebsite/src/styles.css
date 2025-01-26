@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-/* Home Component CSS */
+/* Global Styles */
 .home {
     font-family: Arial, sans-serif;
     color: #333;
@@ -9,89 +8,106 @@
     flex-direction: column;
 }
 
+/* Header Styling */
 header {
-    margin-top: 20px; /* Verschiebt den Header nach unten */
+    margin-top: 2%; /* Verschiebt den Header nach unten (relativ zur Höhe) */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    border-bottom: 2px solid #000;
+    padding: 2% 5%; /* Flexibler Abstand: 2% oben/unten, 5% links/rechts */
+    border-bottom: 0.15rem solid #000;
 }
 
+/* Logo Link Styling */
 .logo {
     display: flex;
-    align-items: center; /* Vertikale Zentrierung von Logo und Text */
-    gap: 15px; /* Abstand zwischen Logo und Text */
+    align-items: center; /* Vertikale Zentrierung */
+    gap: 1rem; /* Abstand zwischen Bild und Text */
+    text-decoration: none; /* Entfernt Unterstreichung */
+    color: inherit; /* Übernimmt die Farbe des Elternelements */
 }
 
-.logo img {
-    width: 70px; /* Logo-Größe */
-    height: auto; /* Proportionale Skalierung */
-    margin-top: -25px; /* Feine Anpassung, um das Logo leicht höher zu setzen */
-}
-
-.logo div {
-    display: flex;
-    flex-direction: column; /* Text untereinander */
+.logo h1,
+.logo span {
+    margin: 0; /* Kein zusätzlicher Abstand */
+    font-family: Arial, sans-serif; /* Schriftart beibehalten */
 }
 
 .logo h1 {
-    font-size: 24px;
-    margin: 0; /* Kein zusätzlicher Abstand */
+    font-size: 1.5rem; /* Titelgröße */
+    color: #333; /* Textfarbe */
 }
 
 .logo span {
-    font-size: 12px;
-    color: #666;
-    margin-top: 5px; /* Abstand zwischen Titel und Untertitel */
+    font-size: 0.75rem; /* Untertitelgröße */
+    color: #666; /* Dezente Farbe */
 }
+
+.logo img {
+    width: 4rem; /* Größe des Logos */
+    height: auto; /* Proportionale Skalierung */
+    margin-top: -0.5rem; /* Leichte Anpassung */
+}
+
+a.logo {
+    text-decoration: none; /* Entfernt die Standard-Unterstreichung */
+    color: inherit; /* Beibehaltung der Schriftfarbe */
+}
+
 
 nav {
     display: flex;
-    gap: 40px; /* Abstand zwischen den Links */
+    gap: 2rem; /* Flexibler Abstand zwischen Links */
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    font-size: 14px;
-    letter-spacing: 5px;
-    text-transform: lowerrcase;
+    font-weight: bolder;
+    font-size: 1rem;
+    letter-spacing: 0.7rem; /* Relative Abstände */
+    text-transform: lowercase;
     font-family: 'Courier New', monospace;
 }
-
 
 nav a:hover {
     text-decoration: underline; /* Unterstreichen beim Hover */
 }
 
+/* Main Content Styling */
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Sorgt dafür, dass das Zitat unten bleibt */
-    padding: 20px;
+    justify-content: flex-end; /* Zitat bleibt am unteren Rand */
+    padding: 5%; /* Flexibler Abstand innerhalb des Hauptbereichs */
     text-align: center;
 }
 
-.quote h2 {
-    font-size: 16px;
-    font-style: italic;
-    color: #444;
-    margin: 0;
-}
 
-.quote p {
-    margin: 5px 0 0;
-}
 
 footer {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid #ddd;
+    text-align: center; /* Zentriert den Text */
+    padding: 1.5rem 1rem; /* Innenabstand: Platz oben/unten und seitlich */
+    background-color: #f1f1f1; /* Dezenter grauer Hintergrund */
+    border-top: 1px solid #ddd; /* Dünne Trennlinie oben */
+    font-size: 0.9rem; /* Kleinere Schriftgröße */
+    color: #555; /* Dezente Schriftfarbe */
 }
 
 footer p {
-    font-size: 14px;
-    color: #666;
+    margin: 0; /* Kein zusätzlicher Abstand */
+    font-family: Arial, sans-serif; /* Konsistente Schriftart */
 }
+
+footer a {
+    color: #007bff; /* Blau für Links */
+    text-decoration: none; /* Entferne Unterstreichung */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Unterstreichung beim Hover */
+}
+
+
+

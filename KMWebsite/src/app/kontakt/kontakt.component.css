@@ -1,0 +1,148 @@
+/* Kontakt-Container */
+.contact-content {
+    display: flex;
+    justify-content: space-between; /* Komponenten nebeneinander */
+    align-items: flex-start; /* Elemente oben ausrichten */
+    gap: 2rem; /* Abstand zwischen Komponenten */
+    flex-wrap: wrap; /* Umbruch bei kleinen Bildschirmen */
+    margin-top: 2rem; /* Abstand zum Header */
+}
+
+/* Kontakt-Details */
+.contact-details {
+    flex: 1; /* Nimmt gleichen Platz wie die anderen Komponenten */
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: left;
+    max-width: 30%; /* Begrenzte Breite */
+}
+
+.contact-details p {
+    margin-top: 7rem; /* Abstand zum oberen Element */
+    margin-bottom: 0; /* Kein zusätzlicher Abstand unten */
+}
+
+.contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5rem; /* Abstand zum unteren Text */
+}
+
+.contact-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline; /* Unterstreichen beim Hover */
+}
+
+h2 {
+    text-align: left; /* Links ausrichten */
+    font-family: 'Courier New', monospace; /* Beibehaltung der Schriftart */
+    margin-left: 0; /* Entfernt negative Margin, falls vorhanden */
+}
+
+
+
+/* Bild-Komponente */
+.image img {
+    width: 110%; /* Vergrößertes Bild */
+    max-width: 30rem; /* Maximale Breite */
+    height: auto; /* Proportionen beibehalten */
+    border-radius: 0.5rem; /* Abgerundete Ecken */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Schatten */
+    position: relative;
+    left: -30%; /* Bild leicht nach links verschieben */
+}
+
+/* Zitat-Komponente */
+.quote-container {
+    flex: 1; /* Gleicher Platz wie die anderen Komponenten */
+    text-align: left;
+    font-size: 1.2rem;
+    font-style: normal;
+    color: #555;
+    line-height: 1.8;
+}
+
+.quote-container p:first-child {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Courier New', monospace;
+    color: #555;
+    margin-bottom: 2rem; /* Abstand nach unten */
+    letter-spacing: -0.10rem;
+}
+
+.quote-container p:nth-of-type(2) {
+    font-size: 1.1rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 5rem;
+}
+
+/* Button zur Kontaktaufnahme */
+.contact-button {
+    margin-top: 2rem; /* Abstand zum oberen Text */
+}
+
+.button-89 {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #373B44;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-89:hover,
+  .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .button-89:active {
+    background: var(--color);
+    color: #fff;
+  }
+/* RESPONSIVES DESIGN */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Komponenten untereinander anordnen */
+        align-items: center; /* Inhalt zentrieren */
+    }
+
+    .contact-details {
+        max-width: 100%; /* Volle Breite bei kleinen Bildschirmen */
+        text-align: center; /* Zentrierte Textausrichtung */
+        margin-bottom: 1.5rem; /* Abstand nach unten */
+    }
+
+    .image img {
+        max-width: 90%; /* Bildbreite für kleine Bildschirme anpassen */
+    }
+
+    .quote-container {
+        text-align: center; /* Zentriere Zitate */
+    }
+
+    .quote-container p:last-child {
+        font-size: 1rem; /* Kleinere Schriftgröße bei kleinen Bildschirmen */
+    }
+}
