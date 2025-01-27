@@ -1,11 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-biografie',
-  imports: [],
   templateUrl: './biografie.component.html',
-  styleUrl: './biografie.component.css'
+  styleUrls: ['./biografie.component.css']
 })
-export class BiografieComponent {
-
+export class BiografieComponent  {
+ 
 }

@@ -31,6 +31,7 @@ header {
 .logo span {
     margin: 0; /* Kein zusätzlicher Abstand */
     font-family: Arial, sans-serif; /* Schriftart beibehalten */
+   
 }
 
 .logo h1 {
@@ -39,12 +40,12 @@ header {
 }
 
 .logo span {
-    font-size: 0.75rem; /* Untertitelgröße */
+    font-size: 1.2rem; /* Untertitelgröße */
     color: #666; /* Dezente Farbe */
 }
 
 .logo img {
-    width: 4rem; /* Größe des Logos */
+    width: 5rem; /* Größe des Logos */
     height: auto; /* Proportionale Skalierung */
     margin-top: -0.5rem; /* Leichte Anpassung */
 }
