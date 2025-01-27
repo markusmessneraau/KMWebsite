@@ -1,72 +1,54 @@
-/* Linie */
-.arrow-line {
-    position: relative;
-    width: 90%; /* Länge der Linie */
-    height: 1px; /* Dicke der Linie */
-    background-color: black; /* Farbe der Linie */
-    margin: 200px auto; /* Verschiebt die Linie nach unten */
-}
-
-/* Pfeil */
-.arrow-line .arrow {
-    position: absolute;
-    right: 0; /* Am rechten Ende der Linie */
-    top: -6px; /* Vertikale Ausrichtung */
-    width: 12px; /* Pfeil-Breite */
-    height: 12px; /* Pfeil-Höhe */
-    border: solid black; /* Farbe des Pfeils */
-    border-width: 0 2px 2px 0; /* Erzeugt die diagonalen Linien */
-    transform: rotate(-45deg); /* Neigung des Pfeils */
-}
-
-/* Vertikale Linien */
-.vertical-line {
-    position: absolute;
-    top: -20px; /* Position relativ zur horizontalen Linie */
-    width: 1px; /* Breite der vertikalen Linie */
-    height: 40px; /* Höhe der vertikalen Linie */
-    background-color: black; /* Farbe der Linie */
-}
-
-/* Unterschiedliche Höhen (abwechselnd) */
-.vertical-line:nth-child(even) {
-    top: -25px;
-}
-
-.vertical-line:nth-child(odd) {
-    top: -10px;
-}
-/* Wrapper für den Pfeil und die Texte */
 .arrow-line-wrapper {
-    position: relative;
-    width: 90%;
-    margin: 50px auto;
-  }
-  
-  /* Vertikale Striche */
-  .vertical-line {
-    transform: scaleX(0.5);
-    background-color: black;
-    height: 40px;
+  position: relative;
+  width: 100%; /* Der Wrapper nimmt die gesamte Breite des Viewports ein */
+  overflow-x: auto; /* Aktiviert horizontales Scrollen */
+  white-space: nowrap; /* Verhindert, dass Elemente umbrechen */
 }
-  
-  /* Texte über den Strichen */
-  .labels-top span {
-    position: absolute;
-    transform: translateX(-50%);
-    top: -70px; /* Position über der Linie */
-    font-size: 15px;
-    text-align: center;
-  }
-  
-  /* Texte unter den Strichen */
-  .labels-bottom span {
-    position: absolute;
-    transform: translateX(-50%);
-    top: 50px; /* Position unter der Linie */
-    font-size: 15px;
-    text-align: center;
-  }
+
+.arrow-line {
+  position: relative;
+  width: 1500px; /* Die Linie hat eine feste Breite */
+  height: 1px; /* Dicke der Linie */
+  background-color: black; /* Farbe der Linie */
+  margin: 300px auto; /* Zentrierung */
+
+}
+
+.arrow-line .arrow {
+  position: absolute;
+  right: 0; /* Der Pfeil bleibt am rechten Ende */
+  top: -6px; /* Vertikale Ausrichtung */
+  width: 12px; /* Pfeil-Breite */
+  height: 12px; /* Pfeil-Höhe */
+  border: solid black; /* Farbe des Pfeils */
+  border-width: 0 2px 2px 0; /* Diagonale Linien */
+  transform: rotate(-45deg); /* Neigung des Pfeils */
+}
+
+.vertical-line {
+  position: absolute;
+  top: -20px; /* Position relativ zur horizontalen Linie */
+  width: 1px; /* Breite der vertikalen Linie */
+  height: 40px; /* Höhe der vertikalen Linie */
+  background-color: black; /* Farbe der Linie */
+}
+
+.labels-top span,
+.labels-bottom span {
+  position: absolute;
+  transform: translateX(-50%); /* Zentriert die Labels */
+  font-size: 15px; /* Schriftgröße */
+  text-align: center;
+}
+
+.labels-top span {
+  top: -70px; /* Position über der Linie */
+}
+
+.labels-bottom span {
+  top: 50px; /* Position unter der Linie */
+}
+
 
   h2 {
     text-align: left; /* Links ausrichten */
@@ -78,6 +60,3 @@
     margin-top: 7%;
 }
 
-
-  
-  

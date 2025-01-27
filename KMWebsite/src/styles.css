@@ -112,3 +112,51 @@ footer a:hover {
 
 
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Logo und Navigation untereinander */
+        align-items: center; /* Zentriert */
+        padding: 1rem; /* Weniger Abstand */
+    }
+
+    .burger-menu {
+        display: flex; /* Burger-Menü sichtbar */
+        flex-direction: column;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .burger-menu span {
+        background: #333;
+        display: block;
+        height: 0.2rem;
+        width: 2rem;
+        margin: 0.3rem 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav {
+        display: none; /* Standardmäßig Navigation versteckt */
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    nav.open {
+        display: flex; /* Navigation wird sichtbar, wenn geöffnet */
+    }
+
+    nav a {
+        font-size: 1rem; /* Kleinere Schriftgröße */
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+
+
+
+

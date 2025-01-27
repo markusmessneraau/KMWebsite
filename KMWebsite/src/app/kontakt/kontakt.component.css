@@ -138,6 +138,7 @@ h2 {
 
     .image img {
         max-width: 90%; /* Bildbreite für kleine Bildschirme anpassen */
+        margin-left:35%;
     }
 
     .quote-container {
@@ -148,3 +149,5 @@ h2 {
         font-size: 1rem; /* Kleinere Schriftgröße bei kleinen Bildschirmen */
     }
 }
+
+

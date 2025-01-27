@@ -1,13 +1,20 @@
 <div class="home">
     <header>
-        <a href="" class="logo"> <!-- Link zur Startseite -->
+        <a href="#" class="logo">
             <img src="KM.jpg" alt="KM² Architektur Logo">
             <div>
                 <h1>KM² architektur</h1>
                 <span>Raum für Gestaltung</span>
             </div>
         </a>
-        <nav>
+        <!-- Burger-Menü für Mobile -->
+        <div class="burger-menu" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Navigation -->
+        <nav [class.open]="isMenuOpen">
             <a href="#">architektur</a>
             <a href="#">projekte</a>
             <a href="#">leistungen</a>
