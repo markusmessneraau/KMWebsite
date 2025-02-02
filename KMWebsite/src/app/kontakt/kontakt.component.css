@@ -10,11 +10,11 @@
 
 /* Kontakt-Details */
 .contact-details {
-    flex: 1; /* Nimmt gleichen Platz wie die anderen Komponenten */
+    flex: 1; 
     font-size: 1rem;
     line-height: 1.8;
     text-align: left;
-    max-width: 30%; /* Begrenzte Breite */
+    max-width: 30%; 
 }
 
 .contact-details p {

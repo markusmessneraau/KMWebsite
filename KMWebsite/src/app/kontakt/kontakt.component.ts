@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class KontaktComponent {
 
+  isMenuOpen = false; // Menü ist standardmäßig geschlossen
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen; // Zustand wechseln
+  }
+
 }
