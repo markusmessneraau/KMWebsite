@@ -126,28 +126,64 @@ h2 {
 /* RESPONSIVES DESIGN */
 @media (max-width: 768px) {
     .contact-content {
-        flex-direction: column; /* Komponenten untereinander anordnen */
-        align-items: center; /* Inhalt zentrieren */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .contact-details {
-        max-width: 100%; /* Volle Breite bei kleinen Bildschirmen */
-        text-align: center; /* Zentrierte Textausrichtung */
-        margin-bottom: 1.5rem; /* Abstand nach unten */
+        max-width: 100%; 
+        text-align: center; 
+        margin-bottom: 1.5rem; 
     }
 
+    /* Bild-Komponente */
     .image img {
-        max-width: 90%; /* Bildbreite für kleine Bildschirme anpassen */
-        margin-left:35%;
+        max-width: 90%; 
+        display: block;            /* Bild als Block-Element */
+        margin: 0 auto;           /* Horizontal zentrieren */
+        border-radius: 0.5rem;    /* Falls du abgerundete Ecken möchtest */
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     }
 
     .quote-container {
-        text-align: center; /* Zentriere Zitate */
+        text-align: center; 
     }
 
     .quote-container p:last-child {
-        font-size: 1rem; /* Kleinere Schriftgröße bei kleinen Bildschirmen */
+        font-size: 1rem; 
     }
 }
+
+
+/* Beispiel-Anpassungen ab max-width: 1500px */
+@media (max-width: 1500px) {
+    .contact-content {
+        /* Optional z.B. etwas kleinere Abstände */
+        gap: 1.5rem;
+        /* Oder je nachdem, ob du eine andere Ausrichtung möchtest */
+        /* flex-direction: row; */
+    }
+
+    .contact-details {
+        /* Beispiel: leicht größere Breite erlauben */
+        max-width: 40%;
+        /* Evtl. etwas größere Schrift, wenn gewünscht */
+        font-size: 1.1rem;
+    }
+
+    .image img {
+        /* Beispiel: Bild nicht ganz so stark nach links schieben */
+        left: 0%;
+        /* Oder auch die Breite anpassen */
+        width: 100%;
+        max-width: 25rem;
+    }
+
+    .quote-container {
+        /* Leicht angepasste Schriftgröße */
+        font-size: 1.15rem;
+    }
+}
+
 
 
